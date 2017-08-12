@@ -4,7 +4,7 @@ Initialized by [vivaxy/gt-npm-package](https://github.com/vivaxy/gt-npm-package)
 
 Based on [dollarshaveclub/shave](https://github.com/dollarshaveclub/shave).
 
-See [demo](https://vivaxy.github.io/react-text-more-less/demo/build/index.html).
+See [demo](https://vivaxy.github.io/react-text-more-less/demo/dist/html/demo.html).
 
 ## Installation
 
