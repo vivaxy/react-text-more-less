@@ -50,10 +50,6 @@ export default class ReactTextMoreLess extends Component {
         window.removeEventListener('resize', this.setDOM);
     }
 
-    resetDOM() {
-        this.root.innerHTML = this.props.text;
-    }
-
     setDOM = () => {
         const { className, collapsed, showMoreText, lessHeight, showMoreElement, showLessElement } = this.props;
         if (collapsed) {
@@ -65,7 +61,8 @@ export default class ReactTextMoreLess extends Component {
             }
         } else {
             const showLessTextClassName = 'js-show-less-text';
-            if (this.root.offsetHeight > lessHeight && showLessElement && !this.root.querySelector('.' + showLessTextClassName)) {
+            const hasShowLess = !!this.root.querySelector(`.${showLessTextClassName}`);
+            if (this.root.offsetHeight > lessHeight && showLessElement && !hasShowLess) {
                 // 如果需要收起，则展示文字
                 const collapse = document.createElement('span');
                 collapse.setAttribute('class', showLessTextClassName);
@@ -79,9 +76,19 @@ export default class ReactTextMoreLess extends Component {
         this.root = root;
     };
 
+    resetDOM() {
+        this.root.innerHTML = this.props.text;
+    }
+
     render() {
         const { className, text, onClick } = this.props;
-        return <div ref={this.setRootRef} className={className} onClick={onClick}>{text}</div>;
+        return (
+            <div // eslint-disable-line jsx-a11y/no-static-element-interactions
+                ref={this.setRootRef}
+                className={className}
+                onClick={onClick}
+            >{text}</div>
+        );
     }
 
 }
