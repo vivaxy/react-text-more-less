@@ -1,0 +1,16 @@
+.app {
+    line-height: 24px;
+}
+
+.example {
+    margin: 15px;
+}
+
+h1.title {
+    color: #f63;
+}
+
+.show-more-text {
+    background-color: #000;
+    color: #fff;
+}

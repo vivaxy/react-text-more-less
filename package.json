@@ -1,0 +1,42 @@
+{
+  "name": "react-text-more-less",
+  "version": "0.0.0",
+  "gtScaffoldVersion": "0.1.0",
+  "description": "gt scaffold for npm packages",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "lint": "eslint ./src",
+    "release": "npm run lint && npm run build && standard-version && git push --follow-tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vivaxy/react-text-more-less.git"
+  },
+  "keywords": [
+    "gt"
+  ],
+  "author": "vivaxy",
+  "license": "MIT",
+  "bugs": {},
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "shave": "^2.0.4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@vivaxy/babel-folder": "^0.1.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-vivaxy": "^0.1.1",
+    "execa": "^0.6.3",
+    "listr": "^0.11.0",
+    "standard-version": "^4.0.0"
+  }
+}
