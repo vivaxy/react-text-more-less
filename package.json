@@ -1,6 +1,6 @@
 {
   "name": "react-text-more-less",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "gtScaffoldVersion": "0.1.0",
   "description": "gt scaffold for npm packages",
   "main": "./build/index.js",
