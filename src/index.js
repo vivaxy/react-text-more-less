@@ -23,6 +23,7 @@ export default class ReactTextMoreLess extends Component {
         showMoreElement: PropTypes.element,
         showLessElement: PropTypes.element,
         onClick: PropTypes.func,
+        rootProps: PropTypes.object,
     };
 
     static defaultProps = {
@@ -32,8 +33,8 @@ export default class ReactTextMoreLess extends Component {
         showMoreElement: undefined,
         showLessElement: undefined,
         onClick: () => {
-
         },
+        rootProps: {},
     };
 
     componentDidMount() {
@@ -88,6 +89,7 @@ export default class ReactTextMoreLess extends Component {
             if (shaveChar && showMoreElement) {
                 unmountComponentAtNode(shaveChar);
             }
+            this.root.innerHTML = this.props.text;
         } else {
             const collapse = this.root.querySelector(`.${showLessTextClassName}`);
             if (collapse) {
@@ -95,16 +97,16 @@ export default class ReactTextMoreLess extends Component {
                 this.root.removeChild(collapse);
             }
         }
-        this.root.innerHTML = this.props.text;
     }
 
     render() {
-        const { className, text, onClick } = this.props;
+        const { className, text, onClick, rootProps } = this.props;
         return (
             <div // eslint-disable-line jsx-a11y/no-static-element-interactions
                 ref={this.setRootRef}
                 className={className}
                 onClick={onClick}
+                {...rootProps}
             >{text}</div>
         );
     }
