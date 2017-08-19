@@ -4,9 +4,13 @@
  */
 
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+import { render, unmountComponentAtNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import shave from 'shave';
+
+const showLessTextClassName = 'js-show-less-text';
+const jsShaveCharClassName = 'js-shave-char';
+const resizeEventName = 'resize';
 
 export default class ReactTextMoreLess extends Component {
 
@@ -33,7 +37,7 @@ export default class ReactTextMoreLess extends Component {
     };
 
     componentDidMount() {
-        window.addEventListener('resize', this.setDOM);
+        window.addEventListener(resizeEventName, this.setDOM);
         this.setDOM();
     }
 
@@ -47,20 +51,24 @@ export default class ReactTextMoreLess extends Component {
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.setDOM);
+        this.resetDOM();
+        window.removeEventListener(resizeEventName, this.setDOM);
     }
+
+    setRootRef = (root) => {
+        this.root = root;
+    };
 
     setDOM = () => {
         const { className, collapsed, showMoreText, lessHeight, showMoreElement, showLessElement } = this.props;
         if (collapsed) {
             shave(this.root, lessHeight, { classname: className, character: showMoreText });
-            const shaveChar = this.root.querySelector('.js-shave-char');
+            const shaveChar = this.root.querySelector(`.${jsShaveCharClassName}`);
             if (shaveChar && showMoreElement) {
                 // 如果不需要 ellipse，则没有 `shaveChar`
                 render(showMoreElement, shaveChar);
             }
         } else {
-            const showLessTextClassName = 'js-show-less-text';
             const hasShowLess = !!this.root.querySelector(`.${showLessTextClassName}`);
             if (this.root.offsetHeight > lessHeight && showLessElement && !hasShowLess) {
                 // 如果需要收起，则展示文字
@@ -72,11 +80,21 @@ export default class ReactTextMoreLess extends Component {
         }
     };
 
-    setRootRef = (root) => {
-        this.root = root;
-    };
-
     resetDOM() {
+        // clean up everything
+        const { collapsed, showMoreElement } = this.props;
+        if (collapsed) {
+            const shaveChar = this.root.querySelector(`.${jsShaveCharClassName}`);
+            if (shaveChar && showMoreElement) {
+                unmountComponentAtNode(shaveChar);
+            }
+        } else {
+            const collapse = this.root.querySelector(`.${showLessTextClassName}`);
+            if (collapse) {
+                unmountComponentAtNode(collapse);
+                this.root.removeChild(collapse);
+            }
+        }
         this.root.innerHTML = this.props.text;
     }
 
