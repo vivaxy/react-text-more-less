@@ -1,5 +1,10 @@
 # react-text-more-less
 
+[![NPM Version](http://img.shields.io/npm/v/react-text-more-less.svg?style=flat-square)](https://www.npmjs.com/package/react-text-more-less)
+[![NPM Downloads](https://img.shields.io/npm/dt/react-text-more-less.svg?style=flat-square)](https://www.npmjs.com/package/react-text-more-less)
+[![MIT License](https://img.shields.io/npm/l/react-text-more-less.svg?style=flat-square)](./LICENSE)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+
 Initialized by [vivaxy/gt-npm-package](https://github.com/vivaxy/gt-npm-package).
 
 Based on [dollarshaveclub/shave](https://github.com/dollarshaveclub/shave).
@@ -60,3 +65,11 @@ class Demo extends Component {
 | `onClick`         | func      | ✖             | () => {}      | container click handler                                   |
 
 If `showMoreElement` supplied, `showMoreText` will be replaced, this props is useful when you want to custom `showMoreText` style or to use a more complex dom structure to display `showMoreText`.
+
+# Change Log
+
+[Change Log](./CHANGELOG.md)
+
+# Licence
+
+[MIT](./LICENSE)
