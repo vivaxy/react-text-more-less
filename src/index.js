@@ -41,7 +41,7 @@ export default class ReactTextMoreLess extends Component {
   }
 
   componentWillUpdate() {
-    // 更新前把 DOM 重置回去，让 React 正常渲染
+    // Reset the DOM before update, this makes React render properly.
     this.resetDOM();
   }
 

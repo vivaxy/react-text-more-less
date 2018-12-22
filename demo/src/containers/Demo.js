@@ -14,9 +14,12 @@ export default class Demo extends Component {
   };
 
   toggleCollapse = () => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
+    const selection = window.getSelection();
+    if (!selection.toString()) {
+      this.setState({
+        collapsed: !this.state.collapsed,
+      });
+    }
   };
 
   toggleMountEverything = () => {
