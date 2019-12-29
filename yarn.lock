@@ -2577,8 +2577,8 @@ setimmediate@^1.0.5:
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
 
 shave@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/shave/-/shave-2.4.0.tgz#129481ce411f35515353ff79b3e1ec3093b9e980"
+  version "2.5.3"
+  resolved "https://registry.npmjs.org/shave/-/shave-2.5.3.tgz#8487519d5b7ce40902ff9db114dc7054757ba314"
 
 shebang-command@^1.2.0:
   version "1.2.0"
