@@ -76,7 +76,7 @@ if (!selection.toString()) {
 
 If `showMoreElement` supplied, `showMoreText` will be replaced, this props is useful when you want to custom `showMoreText` style or to use a more complex dom structure to display `showMoreText`.
 
-# Related projects
+# Related Projects
 
 - [react-ellipsis-text](https://github.com/mobilusoss/react-ellipsis-text)
 
