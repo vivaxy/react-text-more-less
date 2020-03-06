@@ -79,6 +79,7 @@ If `showMoreElement` supplied, `showMoreText` will be replaced, this props is us
 # Related Projects
 
 - [react-ellipsis-text](https://github.com/mobilusoss/react-ellipsis-text)
+- [react-truncate](https://github.com/pablosichert/react-truncate)
 
 # Change Log
 
