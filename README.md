@@ -82,6 +82,7 @@ If `showMoreElement` supplied, `showMoreText` will be replaced, this props is us
 - [react-truncate](https://github.com/pablosichert/react-truncate)
 - [react-text-truncate](https://github.com/ShinyChang/React-Text-Truncate)
 - [shiitake](https://github.com/bsidelinger912/shiitake)
+- [react-read-more-read-less](https://github.com/giatro/react-read-more-read-less)
 
 # Change Log
 
