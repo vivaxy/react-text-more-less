@@ -44,7 +44,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^10.0.8",
     "listr": "^0.11.0",
-    "prettier": "^1.14.2",
+    "prettier": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "standard-version": "^8.0.0"
