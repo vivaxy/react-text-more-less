@@ -47,7 +47,7 @@
     "prettier": "^1.14.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.0"
   },
   "lint-staged": {
     "**/**.{js,json,md}": [
