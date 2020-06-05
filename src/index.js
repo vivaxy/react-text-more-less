@@ -40,9 +40,10 @@ export default class ReactTextMoreLess extends Component {
     this.setDOM();
   }
 
-  componentWillUpdate() {
+  getSnapshotBeforeUpdate() {
     // Reset the DOM before update, this makes React render properly.
     this.resetDOM();
+    return null;
   }
 
   componentDidUpdate() {
