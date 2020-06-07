@@ -1,6 +1,8 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.4.1](https://github.com/vivaxy/react-text-more-less/compare/v0.4.0...v0.4.1) (2020-06-07)
 
 <a name="0.4.0"></a>
 
