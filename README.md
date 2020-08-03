@@ -85,6 +85,7 @@ If `showMoreElement` supplied, `showMoreText` will be replaced, this props is us
 - [react-read-more-read-less](https://github.com/giatro/react-read-more-read-less)
 - [react-lines-ellipsis](https://github.com/xiaody/react-lines-ellipsis)
 - [react-clamp-lines](https://github.com/zoltantothcom/react-clamp-lines)
+- [read-more-react](https://github.com/alexandersmanning/read-more-react)
 
 # Change Log
 
