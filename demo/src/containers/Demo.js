@@ -2,7 +2,6 @@
  * @since 2017-03-17 13:57:46
  * @author vivaxy
  */
-
 import React, { Component } from 'react';
 import '../styles/demo.pcss';
 import ReactTextMoreLess from '../../../src/index.js';
@@ -13,18 +12,18 @@ export default class Demo extends Component {
     mountEverything: true,
   };
 
-  toggleCollapse = () => {
+  toggleCollapse() {
     const selection = window.getSelection();
     if (!selection.toString()) {
       this.setState({
         collapsed: !this.state.collapsed,
       });
     }
-  };
+  }
 
-  toggleMountEverything = () => {
+  toggleMountEverything() {
     this.setState({ mountEverything: !this.state.mountEverything });
-  };
+  }
 
   renderDemo() {
     const { collapsed } = this.state;
