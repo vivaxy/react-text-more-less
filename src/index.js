@@ -39,9 +39,9 @@ export default class ReactTextMoreLess extends Component {
     this.setDOM();
   }
 
-  getSnapshotBeforeUpdate() {
+  getSnapshotBeforeUpdate(prevProps) {
     // Reset the DOM before update, this makes React render properly.
-    this.resetDOM();
+    this.resetDOM(prevProps);
     return null;
   }
 
@@ -50,7 +50,7 @@ export default class ReactTextMoreLess extends Component {
   }
 
   componentWillUnmount() {
-    this.resetDOM();
+    this.resetDOM(this.props);
     window.removeEventListener(resizeEventName, this.setDOM);
   }
 
@@ -96,9 +96,9 @@ export default class ReactTextMoreLess extends Component {
     }
   };
 
-  resetDOM() {
+  resetDOM(prevProps) {
     // clean up everything
-    const { collapsed, showMoreElement } = this.props;
+    const { collapsed, showMoreElement } = prevProps;
     if (collapsed) {
       const shaveChar = this.root.querySelector(`.${jsShaveCharClassName}`);
       if (shaveChar && showMoreElement) {
