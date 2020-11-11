@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/vivaxy/react-text-more-less/compare/v0.4.1...v0.4.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* :bug: fix a problem when toggle collapse not working ([465cf25](https://github.com/vivaxy/react-text-more-less/commit/465cf259c078e1b3135dabfedef2461118e0e893))
+
 ### [0.4.1](https://github.com/vivaxy/react-text-more-less/compare/v0.4.0...v0.4.1) (2020-06-07)
 
 <a name="0.4.0"></a>
