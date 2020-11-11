@@ -5,7 +5,7 @@
   "description": "gt scaffold for npm packages",
   "main": "./build/index.js",
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "babel src --out-dir build",
     "release": "npm run build && standard-version && git push --follow-tags && npm publish",
     "dev": "cd demo && npm run dev",
     "precommit": "lint-staged"
@@ -34,12 +34,14 @@
     "react-dom": "*"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
+    "@babel/register": "^7.12.1",
     "@vivaxy/babel-folder": "^0.1.1",
-    "babel-polyfill": "^6.23.0",
-    "babel-register": "^6.24.1",
     "execa": "^4.0.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.8",
