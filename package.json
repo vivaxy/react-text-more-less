@@ -43,7 +43,7 @@
     "@babel/register": "^7.12.1",
     "@vivaxy/babel-folder": "^0.1.1",
     "execa": "^5.0.0",
-    "husky": "^4.0.0",
+    "husky": "^5.0.0",
     "lint-staged": "^10.0.8",
     "listr": "^0.14.0",
     "prettier": "^2.0.0",
