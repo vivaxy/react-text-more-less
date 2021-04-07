@@ -62,17 +62,17 @@ if (!selection.toString()) {
 
 ## Props
 
-| name              | type    | isRequired | default   | description                                              |
-| ----------------- | ------- | ---------- | --------- | -------------------------------------------------------- |
-| `text`            | string  | ✔          | N/A       | text in the container *Be careful with XSS attacks, #82* |
-| `lessHeight`      | number  | ✔          | N/A       | container collapsed height                               |
-| `collapsed`       | bool    | ✖          | true      | is the container collapsed according to the `lessHeight` |
-| `className`       | string  | ✖          | undefined | className of the container                               |
-| `showMoreText`    | string  | ✖          | ...       | the ellipse text to show more                            |
-| `showMoreElement` | element | ✖          | undefined | the element to show when container collapsed             |
-| `showLessElement` | element | ✖          | undefined | the element to show when container expanded              |
-| `onClick`         | func    | ✖          | () => {}  | container click handler                                  |
-| `rootProps`       | object  | ✖          | {}        | root container props, could be any props a `div` accepts |
+| name              | type    | isRequired | default   | description                                                |
+| ----------------- | ------- | ---------- | --------- | ---------------------------------------------------------- |
+| `text`            | string  | ✔          | N/A       | text in the container **Be careful with XSS attacks, #82** |
+| `lessHeight`      | number  | ✔          | N/A       | container collapsed height                                 |
+| `collapsed`       | bool    | ✖          | true      | is the container collapsed according to the `lessHeight`   |
+| `className`       | string  | ✖          | undefined | className of the container                                 |
+| `showMoreText`    | string  | ✖          | ...       | the ellipse text to show more                              |
+| `showMoreElement` | element | ✖          | undefined | the element to show when container collapsed               |
+| `showLessElement` | element | ✖          | undefined | the element to show when container expanded                |
+| `onClick`         | func    | ✖          | () => {}  | container click handler                                    |
+| `rootProps`       | object  | ✖          | {}        | root container props, could be any props a `div` accepts   |
 
 If `showMoreElement` supplied, `showMoreText` will be replaced, this props is useful when you want to custom `showMoreText` style or to use a more complex dom structure to display `showMoreText`.
 
