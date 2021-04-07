@@ -64,7 +64,7 @@ if (!selection.toString()) {
 
 | name              | type    | isRequired | default   | description                                              |
 | ----------------- | ------- | ---------- | --------- | -------------------------------------------------------- |
-| `text`            | string  | ✔          | N/A       | text in the container                                    |
+| `text`            | string  | ✔          | N/A       | text in the container *Be careful with XSS attacks, #82* |
 | `lessHeight`      | number  | ✔          | N/A       | container collapsed height                               |
 | `collapsed`       | bool    | ✖          | true      | is the container collapsed according to the `lessHeight` |
 | `className`       | string  | ✖          | undefined | className of the container                               |
