@@ -4083,9 +4083,10 @@ setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
 
-shave@^2.4.0:
-  version "2.5.3"
-  resolved "https://registry.npmjs.org/shave/-/shave-2.5.3.tgz#8487519d5b7ce40902ff9db114dc7054757ba314"
+shave@^2.5.3:
+  version "2.5.10"
+  resolved "https://registry.npmjs.org/shave/-/shave-2.5.10.tgz#0dd80c4c5ef5a8ff055cf580e3a76148fd0eedb4"
+  integrity sha512-D35tlzDWSCdgBBNzuV3R72SkxIpCupB4WIpJBzbZ1lQYwGsJQP51uG39Xr7S1ISZKh890X10zLWOPwjyf3iQUw==
 
 shebang-command@^2.0.0:
   version "2.0.0"

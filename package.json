@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.5.10",
-    "shave": "^2.4.0"
+    "shave": "^2.5.3"
   },
   "peerDependencies": {
     "react": "*",
