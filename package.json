@@ -28,7 +28,7 @@
   "author": "vivaxy",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.7.2",
     "shave": "^2.4.0"
   },
   "peerDependencies": {
